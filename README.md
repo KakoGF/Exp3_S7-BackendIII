@@ -50,7 +50,7 @@ rechaza la operación, se ejecuta un **paso compensatorio**.
 
 ## 3. Diagrama (criterio 2)
 
-![Arquitectura de eventos](docs/arquitectura-eventos.png)
+![Arquitectura de eventos](docs/Figura_01_diagrama.png)
 
 ### Tópicos y eventos
 
@@ -116,7 +116,7 @@ el mensaje sigue fallando, se mueve a `<tópico>.DLT` para no bloquear la partic
 | Criterio | Dónde mirarlo |
 | --- | --- |
 | Define la arquitectura de eventos alineada al patrón | Sección 2; `ms-cuentas/services/MovimientoService.java` y `SagaMovimientoService.java` |
-| Diagrama con tópicos, mensajes y eventos | `docs/arquitectura-eventos.png` y sección 3 |
+| Diagrama con tópicos, mensajes y eventos | `docs/Figura_01_diagrama.png` y sección 3 |
 | Tolerancia a fallos con Resilience4j | `config-repo/*.properties`, `bff-*/services/SolicitudMovimiento*Service.java`, `ms-cuentas/messaging/EventoPublisher.java`, `ms-notificaciones/clients/ProveedorNotificacionesClient.java` |
 | Mensajería Kafka funcional y escalable | `*/messaging/`, `*/config/KafkaConsumidorConfig.java`, `docker-compose.yml` |
 
